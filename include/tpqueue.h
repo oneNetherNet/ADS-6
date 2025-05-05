@@ -1,6 +1,6 @@
 // Copyright 2022 NNTU-CS
-#ifndef INCLUDE_TPQUEUE_H_
-#define INCLUDE_TPQUEUE_H_
+#ifndef INCLUDE_TPQUEUE_H
+#define INCLUDE_TPQUEUE_H
 template<typename T>
 class TPQueue {
  private:
@@ -46,4 +46,4 @@ struct SYM {
   int prior;
 };
 
-#endif  // INCLUDE_TPQUEUE_H_
+#endif  // INCLUDE_TPQUEUE_H
