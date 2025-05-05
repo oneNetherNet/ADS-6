@@ -32,14 +32,14 @@ class TPQueue {
     }
   }
   T pop() {
-   if (!head) {
-     throw "Is empty!" ;
+    if (!head) {
+      throw "Is empty!";
     }
-   Node* temp = head;
-   T t_obj = head->obj;
-   head = head->next;
-   delete temp;
-   return t_obj;
+    Node* temp = head;
+    T t_obj = head->obj;
+    head = head->next;
+    delete temp;
+    return t_obj;
   }
 };
 
