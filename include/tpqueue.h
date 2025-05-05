@@ -37,7 +37,7 @@ public:
       head = head->next;
       delete temp;
       return t_obj;
-    }
+    } else throw std::string("Queue is empty!");
   }
 };
 
