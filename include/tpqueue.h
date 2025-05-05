@@ -3,14 +3,15 @@
 #define INCLUDE_TPQUEUE_H_
 template<typename T>
 class TPQueue {
-private:
+ private:
   struct Node {
     T obj;
     Node* next;
     explicit Node(const T& val) : obj(val), next(nullptr) {}
   };
   Node* head = nullptr;
-public:
+
+ public:
   ~TPQueue() {
     while (head) {
       Node* temp = head;
@@ -31,7 +32,7 @@ public:
     }
   }
   T pop() {
-    if (!head) throw "Is empty!";
+    if (!head) { throw "Is empty!" ; }
       Node* temp = head;
       T t_obj = head->obj;
       head = head->next;
