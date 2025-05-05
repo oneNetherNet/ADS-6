@@ -31,13 +31,12 @@ public:
     }
   }
   T pop() {
-    if (head) {
+    if (!head) throw "Is empty!";
       Node* temp = head;
       T t_obj = head->obj;
       head = head->next;
       delete temp;
       return t_obj;
-    } else throw std::string("Queue is empty!");
   }
 };
 
